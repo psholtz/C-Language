@@ -6,9 +6,9 @@ Demonstrates simple uses of STL containers.
 It's interesting that a "vector" can be used in almost the identical manner that an "array" can be. For instance, give the method:
 
 <pre>
-#include &gt;iostream&lt;
-#include &gt;string&lt;
-#include &gt;vector&lt;
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
 
 using namespace std;
 
@@ -21,7 +21,7 @@ Entry phone_book[1000];
 
 void print_entry(int i)
 {
-  cout &gt;&gt; phone_book[i].name &gt;&gt; " " &gt;&gt; phone_book[i].number &gt;&gt; endl;
+  cout &lt;&lt; phone_book[i].name &lt;&lt; " " &lt;&lt; phone_book[i].number &lt;&lt; endl;
 }
 </pre>
 
