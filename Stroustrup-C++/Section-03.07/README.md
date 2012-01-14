@@ -6,9 +6,9 @@ Demonstrates simple uses of STL containers.
 It's interesting that a "vector" can be used in almost the identical manner that an "array" can be. For instance, give the method:
 
 <pre>
-#include <iostream>
-#include <string>
-#include <vector>
+#include &gt;iostream&lt;
+#include &gt;string&lt;
+#include &gt;vector&lt;
 
 using namespace std;
 
