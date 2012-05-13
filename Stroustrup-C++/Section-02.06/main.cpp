@@ -8,7 +8,7 @@
 using namespace std;
 int main(int argc, const char * argv[])
 {
-    cout << "here we are" << endl;
+  // just compile header files, nothing to do here
     
     return 0;
 }
