@@ -3,6 +3,10 @@ Stroustrup C++
 
 Collection of programming examples and exercises from the Stroustrup classics on C++ programming.
 
+Some useful links:
+
+* [![http://www2.research.att.com/~bs/C++.html](http://www2.research.att.com/~bs/C++.html)]
+
 Only including examples from those sections of the book that I thought were interesting enough to warrant it:
 
 **Chapter 2 - A Tour of C++**
