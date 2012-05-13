@@ -1,6 +1,8 @@
 Stroustrup C++
 ============== 
 
+Collection of programming examples and exercises from the Stroustrup classics on C++ programming.
+
 **Chapter 2 - A Tour of C++**
 * Section 2.4 - Modular Programming
 * Section 2.5 - Data Abstractions
