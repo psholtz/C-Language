@@ -3,9 +3,7 @@ Stroustrup C++
 
 Collection of programming examples and exercises from the Stroustrup classics on C++ programming.
 
-Only including examples from those sections of the book that I thought were interesting enough to warrant it. 
-
-The sections listed below are the ones included in the branch:
+Only including examples from those sections of the book that I thought were interesting enough to warrant it:
 
 **Chapter 2 - A Tour of C++**
 * Section 2.4 - Modular Programming
