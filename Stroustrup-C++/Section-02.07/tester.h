@@ -2,9 +2,6 @@
 //  tester.h
 //  Chapter2.7
 //
-//  Created by Paul Sholtz on 5/12/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
 
 #ifndef tester_h
 #define tester_h
