@@ -5,7 +5,7 @@ Collection of programming examples and exercises from the Stroustrup classics on
 
 Some useful links:
 
-* (http://www2.research.att.com/~bs/C++.html)
+* [Test me(http://www2.research.att.com/~bs/C++.html)]
 
 Only including examples from those sections of the book that I thought were interesting enough to warrant it:
 
