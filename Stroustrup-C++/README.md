@@ -6,7 +6,7 @@ Collection of programming examples and exercises from the Stroustrup classic on 
 Some useful links:
 
 * [C++ Programming Language, AT&T Bell Labs](http://www2.research.att.com/~bs/C++.html)
-* [C++ Guru of the Week](http://www.gotw.ca/gotw/)
+* [C++ Guru of the Week Archive](http://www.gotw.ca/gotw/)
 
 Only including examples from those sections of the book that I thought were interesting enough to warrant it:
 
