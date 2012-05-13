@@ -1,6 +1,8 @@
 Stroustrup C++
 ============== 
 
+[![http://farm6.staticflickr.com/5239/7186721312_380a4db2df.jpg](http://farm6.staticflickr.com/5239/7186721312_380a4db2df.jpg)]
+
 Collection of programming examples and exercises from the Stroustrup classic on C++ programming.
 
 Some useful links:
