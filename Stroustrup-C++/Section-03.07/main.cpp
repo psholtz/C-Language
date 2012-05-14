@@ -125,6 +125,8 @@ int main (int argc, const char * argv[])
     pop_entry();            // Person 3 (List) 456
     pop_entry();            // Person 3 (List) 123
     
+    cout << "Done!" << endl;
+
     return 0;
 }
 
