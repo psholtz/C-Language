@@ -21,7 +21,7 @@ Entry phone_book[1000];
 
 void print_entry(int i)
 {
-  cout << phone_book[i].name << " " << phone_book[i].number << endl;
+  cout &gt;&gt; phone_book[i].name &gt;&gt; " " &gt;&gt; phone_book[i].number &gt;&gt; endl;
 }
 </pre>
 
