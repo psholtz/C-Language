@@ -10,6 +10,8 @@
 #include <string>
 #include <vector>
 #include <list>
+#include <map>
+#include <utility>
 
 // contains the out_of_range exception, for the CustomVector class
 #include <stdexcept>
@@ -40,6 +42,7 @@ Entry phone_book1[1000];
 vector<Entry> phone_book2(1000);
 list<Entry> phone_book3(1000);
 CustomVector<Entry> phone_book4(1000);
+map<string,int> phone_book5;
 
 #pragma mark -
 #pragma mark Add Entries
@@ -148,6 +151,13 @@ void testCustom()
     }
 }
 
+void addEntries5()
+{
+    phone_book5["Person 1 (Map)"] = 123;
+    phone_book5["Person 2 (Map)"] = 456;
+    phone_book5["Person 3 (Map)"] = 901;
+}
+
 #pragma mark -
 #pragma mark Print Entries
 // Note that print_entry1 and print_entry2 have essentially the identical syntax;
@@ -174,31 +184,36 @@ void print_entry4(int i)
     cout << phone_book4[i].name << " " << phone_book4[i].number << endl;
 }
 
+void print_entry5(const string &s)
+{
+    cout << phone_book5[s] << endl;
+}
+
 #pragma mark -
 #pragma mark Driver
 int main (int argc, const char * argv[])
 {
     // TEST ARRAY
     addEntries1();
-    print_entry1(0);        // Person 1 (Array) 123
-    print_entry1(1);        // Person 2 (Array )456
-    print_entry1(2);        // Person 3 (Array) 901
+    print_entry1(0);        // ==> Person 1 (Array) 123
+    print_entry1(1);        // ==> Person 2 (Array )456
+    print_entry1(2);        // ==> Person 3 (Array) 901
     
     cout << " " << endl;
     
     // TEST VECTOR
     addEntries2();
-    print_entry2(0);        // Person 1 (Vector) 123
-    print_entry2(1);        // Person 2 (Vector) 456
-    print_entry2(2);        // Person 3 (Vector) 901
+    print_entry2(0);        // ==> Person 1 (Vector) 123
+    print_entry2(1);        // ==> Person 2 (Vector) 456
+    print_entry2(2);        // ==> Person 3 (Vector) 901
     
     cout << " " << endl;
     
     // TEST LIST (used as a stack)
     addEntries3();
-    pop_entry();            // Person 3 (List) 901
-    pop_entry();            // Person 2 (List) 456
-    pop_entry();            // Person 1 (List) 123
+    pop_entry();            // ==> Person 3 (List) 901
+    pop_entry();            // ==> Person 2 (List) 456
+    pop_entry();            // ==> Person 1 (List) 123
     
     cout << " " << endl;
 
@@ -208,9 +223,17 @@ int main (int argc, const char * argv[])
     cout << " " << endl;
     
     addEntries4();
-    print_entry4(0);        // Person 1 (Custom) 123
-    print_entry4(1);        // Person 2 (Custom) 456
-    print_entry4(2);        // Person 3 (Custom) 901
+    print_entry4(0);        // ==> Person 1 (Custom) 123
+    print_entry4(1);        // ==> Person 2 (Custom) 456
+    print_entry4(2);        // ==> Person 3 (Custom) 901
+    
+    cout << " " << endl;
+    
+    // TEST MAP
+    addEntries5();
+    print_entry5("Person 1 (Map)");     // ==> 123
+    print_entry5("Person 2 (Map)");     // ==> 456
+    print_entry5("Person 3 (Map)");     // ==> 901
     
     cout << "Done!" << endl;
     
