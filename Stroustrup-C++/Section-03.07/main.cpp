@@ -2,9 +2,6 @@
 //  main.cpp
 //  Chapter3
 //
-//  Created by Engineer on 5/14/12.
-//  Copyright 2012 __MyCompanyName__. All rights reserved.
-//
 
 #include <iostream>
 #include <string>

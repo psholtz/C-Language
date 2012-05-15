@@ -2,9 +2,6 @@
 //  main.cpp
 //  Chapter3.8
 //
-//  Created by Paul Sholtz on 5/14/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
 
 #include <iostream>
 #include <string>
