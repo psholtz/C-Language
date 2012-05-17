@@ -12,7 +12,7 @@ Some useful links:
 
 Only including examples from those sections of the book that I thought were interesting enough to warrant it:
 
-Introduction Material
+Introductory Material
 --------------------- 
 
 **Chapter 2 - A Tour of C++**
