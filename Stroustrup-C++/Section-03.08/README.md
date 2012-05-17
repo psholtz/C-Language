@@ -1,4 +1,4 @@
 3.8 - Algorithms
 ================ 
 
-[working]
+Demonstrates the use of some simple algorithms in conjunction with the Standard Template Library (STL).
