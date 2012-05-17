@@ -22,6 +22,7 @@ Introduction Material
 * Section 2.7 - Generic Programming
 
 **Chapter 3 - A Tour of the Standard Library**
+* Section 3.5 - Strings
 * Section 3.7 - Containers
 * Section 3.8 - Algorithms
 * Section 3.9 - Math
