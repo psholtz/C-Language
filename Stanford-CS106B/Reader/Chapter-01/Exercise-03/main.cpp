@@ -27,8 +27,7 @@ int total(int start, int stop)
 #pragma mark Driver Loop
 int main (int argc, const char * argv[])
 {
-    cout << total(1,100) << endl;
+    cout << total(1,100) << endl;  // ==> 5050
     
     return 0;
 }
-
