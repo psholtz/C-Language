@@ -12,7 +12,6 @@ using namespace std;
 #pragma mrk Declarations
 string getLine(const string&);
 int sum(int);
-int nth_odd(int);
 
 #pragma mark -
 #pragma mark Definitions
@@ -29,14 +28,9 @@ int sum(int n)
     int sum = 0;
     for (int i=0; i < n; ++i ) 
     {
-        sum += nth_odd(i);
+        sum += 2*i + 1;
     }
     return sum;
-}
-
-int nth_odd(int n)
-{
-    return 2*n + 1;
 }
 
 #pragma mark -
