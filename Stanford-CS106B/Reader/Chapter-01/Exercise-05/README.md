@@ -14,3 +14,5 @@ Enter 0 to signal the end of the list.
  ? 0
 The largest value was 42.
 </pre>
+
+Be sure to define the sentinel value as a constant in a way that makes it easy to change. You should also make sure that the program works correctly if all the input values are negative.

@@ -7,6 +7,8 @@
 #include <string>
 #include <vector>
 
+#define SENTINEL "0"
+
 using namespace std;
 
 #pragma mark -
@@ -46,7 +48,7 @@ int main (int argc, const char * argv[])
     cout << "Enter 0 to signal the end of the list." << endl;
     while ( true ) {
         string number = getLine(" ? ");
-        if ( number == "0" ) break;
+        if ( number == SENTINEL ) break;
         integers.push_back(atoi(number.c_str()));
     }
     
