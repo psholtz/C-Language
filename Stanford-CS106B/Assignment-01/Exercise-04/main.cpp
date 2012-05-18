@@ -67,13 +67,13 @@ int main (int argc, const char * argv[])
     cout << "intToString" << endl;
     cout << "-----------" << endl;
     
-    cout << s1 << endl;
-    cout << s2 << endl;
-    cout << s3 << endl;
-    cout << s4 << endl;
-    cout << s5 << endl;
-    cout << s6 << endl;
-    cout << s7 << endl;
+    cout << s1 << endl;  // ==> 100
+    cout << s2 << endl;  // ==> 99
+    cout << s3 << endl;  // ==> 101
+    cout << s4 << endl;  // ==> 1000999
+    cout << s5 << endl;  // ==> 25
+    cout << s6 << endl;  // ==> 0
+    cout << s7 << endl;  // ==> -5
     
     cout << endl;
     
@@ -89,13 +89,13 @@ int main (int argc, const char * argv[])
     cout << "stringToInt" << endl;
     cout << "-----------" << endl;
     
-    cout << i1 << endl;
-    cout << i2 << endl;
-    cout << i3 << endl;
-    cout << i4 << endl;
-    cout << i5 << endl;
-    cout << i6 << endl;
-    cout << i7 << endl;
+    cout << i1 << endl;  // ==> 100
+    cout << i2 << endl;  // ==> 99
+    cout << i3 << endl;  // ==> 101
+    cout << i4 << endl;  // ==> 1000999
+    cout << i5 << endl;  // ==> 25
+    cout << i6 << endl;  // ==> 0
+    cout << i7 << endl;  // ==> -5
 
     return 0;
 }
