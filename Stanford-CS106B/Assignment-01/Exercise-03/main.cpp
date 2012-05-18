@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Assignment3
+//  Assignment 1.3
 //
 
 #include <iostream>
@@ -45,41 +45,41 @@ void pyramid()
 int main (int argc, const char * argv[])
 {
     // first row
-    cout << c(0,0) << endl;
-    cout << endl;
+    cout << c(0,0) << endl;  // ==> 1
+    cout << endl; 
     
     // second row
-    cout << c(1,0) << endl;
-    cout << c(1,1) << endl;
+    cout << c(1,0) << endl;  // ==> 1
+    cout << c(1,1) << endl;  // ==> 1
     cout << endl;
     
     // third row
-    cout << c(2,0) << endl;
-    cout << c(2,1) << endl;
-    cout << c(2,2) << endl;
+    cout << c(2,0) << endl;  // ==> 1
+    cout << c(2,1) << endl;  // ==> 2
+    cout << c(2,2) << endl;  // ==> 1
     cout << endl;
     
     // fourth row
-    cout << c(3,0) << endl;
-    cout << c(3,1) << endl;
-    cout << c(3,2) << endl;
-    cout << c(3,3) << endl;
+    cout << c(3,0) << endl;  // ==> 1
+    cout << c(3,1) << endl;  // ==> 3
+    cout << c(3,2) << endl;  // ==> 3 
+    cout << c(3,3) << endl;  // ==> 1
     cout << endl;
     
     // fifth row
-    cout << c(4,0) << endl;
-    cout << c(4,1) << endl;
-    cout << c(4,2) << endl;
-    cout << c(4,3) << endl;
-    cout << c(4,4) << endl;
+    cout << c(4,0) << endl;  // ==> 1
+    cout << c(4,1) << endl;  // ==> 4
+    cout << c(4,2) << endl;  // ==> 6
+    cout << c(4,3) << endl;  // ==> 4
+    cout << c(4,4) << endl;  // ==> 1
     
     // sixth row
-    cout << c(5,0) << endl;
-    cout << c(5,1) << endl;
-    cout << c(5,2) << endl;
-    cout << c(5,3) << endl;
-    cout << c(5,4) << endl;
-    cout << c(5,5) << endl;
+    cout << c(5,0) << endl;  // ==> 1
+    cout << c(5,1) << endl;  // ==> 5
+    cout << c(5,2) << endl;  // ==> 10
+    cout << c(5,3) << endl;  // ==> 10
+    cout << c(5,4) << endl;  // ==> 5
+    cout << c(5,5) << endl;  // ==> 1
     
     cout << endl;
     pyramid();
