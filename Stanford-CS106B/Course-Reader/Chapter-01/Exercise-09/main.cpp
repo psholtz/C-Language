@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Exercise 1.8
+//  Exercise 1.9
 //
 
 #include <iostream>
