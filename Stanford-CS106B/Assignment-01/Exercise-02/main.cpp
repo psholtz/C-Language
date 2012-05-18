@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Assignment2
+//  Assignment 1.2
 //
 
 #include <iostream>
