@@ -2,9 +2,6 @@
 //  main.cpp
 //  Assignment2
 //
-//  Created by Engineer on 5/17/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
 
 #include <iostream>
 #include <string>
@@ -17,9 +14,8 @@ using namespace std;
 string getLine(const string&);
 string obenglobish(const string&);
 string obenglobish_recur(const string&,int);
+int next_consonant(const string&);
 bool is_vowel(char);
-bool is_vowel_minus_e(char);
-int next_consonant(const string&,int);
 
 #pragma mark -
 #pragma mark Definitions
@@ -35,10 +31,6 @@ bool is_vowel(char c)
 {
     return ( c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' );
 }
-bool is_vowel_minus_e(char c)
-{
-    return ( c == 'a' || c == 'i' || c == 'o' || c == 'u' );
-}
 
 string obenglobish(const string &s)
 {
@@ -46,76 +38,41 @@ string obenglobish(const string &s)
     string work = s;
     transform(s.begin(), s.end(), work.begin(), ::tolower);
     
-    // Handle one character strings specially
-    if ( s.length() == 1 )
-    {
-        if ( is_vowel(s[0]) )
-        {
-            return "ob" + s;
-        }
-        else 
-        {
-            return s;
-        }
-    }
-    
-    // Handle strings that start with vowels specially
-    else 
-    {
-        /*if ( is_vowel(s[0]) ) 
-        {
-            int next = next_consonant(s.substr(0), 0);
-            return "ob" + obenglobish_recur(s, next);
-        }
-        else 
-        {
-            return obenglobish_recur(s, 1);
-        }*/
-    }
+    return obenglobish_recur(s,0);
 }
 
-string obenglobish_recur(const string& s, int index)
+string obenglobish_recur(const string &s,int index)
 {
     for ( int i=index; i < s.length(); ++i ) 
-    {   
-        // Not the last character in string.
-        if ( i < s.length() - 1 )
+    {
+        if ( is_vowel(s[i]) )
         {
-            if ( is_vowel(s[i]) ) 
+            string prev = s.substr(0,i);
+            string next = s.substr(i+1);
+            int marker = next_consonant(next);
+            
+            if ( i < s.length() - 1 || s[i] != 'e' )
             {
-                string front = s.substr(0,i);
-                string back = s.substr(i);
-                int next = next_consonant(back, i);
-                return front + "ob" + obenglobish_recur(back, next);
-            }
-        }
-        
-        // This is the last character in the string.
-        else 
-        {
-            if ( is_vowel_minus_e(s[i]) )
-            {
-                string front = s.substr(0,i);
-                return front + "ob" + s[i];
+                return prev + "ob" + s[i] + obenglobish_recur(next,marker);
             }
         }
     }
     return s;
 }
 
-int next_consonant(const string& s,int index) 
+int next_consonant(const string &s)
 {
-    if ( s.length() > 1 ) 
+    int i;
+    for ( int i=0; i < s.length(); ++i ) 
     {
-        for ( int i=0; i < s.length(); ++i ) 
+        if ( !is_vowel(s[i]) )
         {
-            if ( !is_vowel(s[i]) ) { break; }
+            return i;
         }
-        return index + 1;
     }
-    return index;
+    return i;
 }
-
+    
 #pragma mark -
 #pragma mark Main Driver
 int main (int argc, const char * argv[])
