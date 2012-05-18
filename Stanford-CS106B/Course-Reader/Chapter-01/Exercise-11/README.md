@@ -1,7 +1,9 @@
 Exercise 11
 ----------- 
 
-The German mathematican Leibnitz (1646-1716) discovered the rather remarkable fact that the mathematical constant pi can be computed using the following mathematical relationship:
+[![](http://farm8.staticflickr.com/7238/7223788942_8506fc3639.jpg)](http://farm8.staticflickr.com/7238/7223788942_8506fc3639.jpg)
+
+The German mathematican Leibniz (1646-1716) discovered the rather remarkable fact that the mathematical constant pi can be computed using the following mathematical relationship:
 
 <pre>
 pi/4 = 1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + ...
