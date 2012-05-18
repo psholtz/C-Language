@@ -65,10 +65,7 @@ int next_consonant(const string &s)
     int i;
     for ( int i=0; i < s.length(); ++i ) 
     {
-        if ( !is_vowel(s[i]) )
-        {
-            return i;
-        }
+      if ( !is_vowel(s[i]) ) { return i; }
     }
     return i;
 }
