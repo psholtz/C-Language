@@ -9,7 +9,7 @@
 using namespace std;
 
 #pragma mark -
-#pragma mrk Declarations
+#pragma mark Declarations
 string getLine(const string&);
 int sum(int);
 

@@ -12,7 +12,7 @@
 using namespace std;
 
 #pragma mark -
-#pragma mrk Declarations
+#pragma mark Declarations
 string getLine(const string&);
 int getTotal(vector<int>);
 float getAverage(int,int);

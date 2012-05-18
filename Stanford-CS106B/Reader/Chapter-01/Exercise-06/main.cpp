@@ -17,7 +17,7 @@ struct Numbers {
 };
 
 #pragma mark -
-#pragma mrk Declarations
+#pragma mark Declarations
 string getLine(const string&);
 Numbers getMaximumNumbers(vector<int>);
 

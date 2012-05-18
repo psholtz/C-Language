@@ -8,7 +8,7 @@
 using namespace std;
 
 #pragma mark -
-#pragma mrk Declarations
+#pragma mark Declarations
 int total(int, int);
 
 #pragma mark -
