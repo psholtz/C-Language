@@ -23,3 +23,20 @@ In other words, you can peel off the last digit of the number **n** by using div
 
 As you work through this problem, you should keep the following points in mind:
 
+* Your solution should operate recursively and should use no iterative constructs such as **for** or **while**. It is also inappropriate to call the provided **integerToString** function or any other library function that does numeric conversion.
+
+* The value that you get when you compute n%10 is an integer, and not a character. To convert this integer to its character equivalent you have to add the ASCII code for the character '0' and then cast that value to a **char**. If you then need to convert that character to a one-character string, you can concatenate it with **string()**, as shown here:
+
+<pre>
+string() + ch
+</pre>
+
+If you are coming from Java, be aware that the Java trick of writing:
+
+<pre>
+"" + ch
+</pre>
+
+does **not** work in C++ and will result in very strange behavior -- it might return garbage, or just outright crash the program!
+
+* You should think carefully about what the simple cases need to be. In particular, you should make sure that calling **intToString(0)** returns "0" and not the empty string. This fact may require you to add special code to handle this case.
