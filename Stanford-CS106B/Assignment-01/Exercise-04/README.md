@@ -40,3 +40,7 @@ If you are coming from Java, be aware that the Java trick of writing:
 does **not** work in C++ and will result in very strange behavior -- it might return garbage, or just outright crash the program!
 
 * You should think carefully about what the simple cases need to be. In particular, you should make sure that calling **intToString(0)** returns "0" and not the empty string. This fact may require you to add special code to handle this case.
+
+* Your implementation should allow n to be negative, as illustrated by the earlier example in which **stringToInt("-42")** returns -42. Again, implementing these functions for negative numbers will probably require adding special-case code.
+
+* It's possible to split apart numbers and strings in many ways. You are free to split them however you'd like. However, peeling off the last digit as we've suggested is easier than most other approaches.
