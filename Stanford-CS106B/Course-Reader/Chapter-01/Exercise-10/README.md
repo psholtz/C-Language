@@ -1,6 +1,8 @@
 Exercise 10
 ----------- 
 
+[![](http://farm6.staticflickr.com/5319/7223746768_cedec95205.jpg)](http://farm6.staticflickr.com/5319/7223746768_cedec95205.jpg)
+
 In 1979, Douglas Hofstadter, Professor of Cognitive Science at the University of Indiana, wrote *Goedel, Escher and Bach* which he described as "a metaphorical fugue on minds and machines in the spirit of Lewis Carroll." The book won the Pulitzer Prize for Literature and has over the years become one of the classics of computer science. Much of its charm comes from the mathematical oddities and puzzles it contains, many of which can be expressed in the form of compute programs. Of these, one of the most interesting concerns the sequence of numbers formed by repeatedly executing the following rules for some positive integer *n*:
 
 * If *n* is equal to 1, you've reached the end of the sequence and can stop.
