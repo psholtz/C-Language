@@ -1,9 +1,6 @@
 //
 //  main.cpp
-//  Assignment4
-//
-//  Created by Engineer on 5/17/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Assignment 1.4
 //
 
 #include <iostream>
@@ -35,7 +32,7 @@ int stringToInt(string s)
     // handle special cases
     size_t len = s.length(); 
     if ( len == 1 && s[0] == '0' ) { return 0; }
-    if ( len == 1 && s[0] == '-' ) { return (-1) * stringToInt(s.substr(1)); }
+    if ( len == 2 && s[0] == '-' ) { return (-1) * stringToInt(s.substr(1)); }
     
     // if the string is < 10
     if ( len == 1 ) { return _stringHelper(s[0]); }
@@ -86,8 +83,8 @@ int main (int argc, const char * argv[])
     int i4 = stringToInt("1000999");
     int i5 = stringToInt("25");
     int i6 = stringToInt("0");
-  //  int i7 = stringToInt("-5");
-    
+    int i7 = stringToInt("-5");
+
     cout << "-----------" << endl;
     cout << "stringToInt" << endl;
     cout << "-----------" << endl;
@@ -98,7 +95,7 @@ int main (int argc, const char * argv[])
     cout << i4 << endl;
     cout << i5 << endl;
     cout << i6 << endl;
-    
+    cout << i7 << endl;
+
     return 0;
 }
-
