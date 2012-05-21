@@ -5,4 +5,4 @@ If you have not done so the first time around, rewrite the Celcius-to-Fahrenheit
 
 Note: This program requires linking with the Stanford C++ Libraries:
 
-[![](http://www.stanford.edu/class/cs106b/materials/cppdoc/)](http://www.stanford.edu/class/cs106b/materials/cppdoc/)
+http://www.stanford.edu/class/cs106b/materials/cppdoc/
