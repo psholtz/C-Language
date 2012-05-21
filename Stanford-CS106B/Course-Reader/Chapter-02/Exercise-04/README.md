@@ -4,7 +4,7 @@ Exercise 4
 If you are unfortunate enough to be outside in winter weather, you know that your perception of the cold is dependent on the wind speed as well as the temperature. The faster the wind blows, the colder you feel. To quantify how the wind affects temperature perception, the National Weather Service reports the **wind chill*, which is illustrated on their web site as shown in Figure 2-15. At the bottom of the figure, you can see that the formula for wind chill is:
 
 <pre>
-
+35.74 + 0.6215 * t - 35.75 * v ^ 0.16 + 0.4275 * t * v ^ 0.16
 </pre>
 
 where *t* is the Fahrenheit temperature and *v* is the wind speed in miles per hour.
