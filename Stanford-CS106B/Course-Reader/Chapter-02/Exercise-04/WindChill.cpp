@@ -1,5 +1,5 @@
 /*
- * File: Round.cpp
+ * File: WindChill.cpp
  * ---------------------
  * Code for calculating wind chill.
  */
