@@ -29,6 +29,12 @@ void search(int);
 
 #pragma mark -
 #pragma mark Definitions
+/*
+ * Function: factors(int n);
+ * -------------------------
+ * Return a container containing all the 
+ * factors of n (less than n), including 1.
+ */
 vector<int> factors(int n)
 {
     vector<int> factors;
