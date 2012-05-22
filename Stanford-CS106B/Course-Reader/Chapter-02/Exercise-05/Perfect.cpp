@@ -1,8 +1,7 @@
 /*
  * File: Perfect.cpp
  * --------------------------
- * Demonstrates how to use the Stanford C++ graphics library 
- * to draw a simple checkerboard.
+ * Calculates perfect numbers.
  */
 
 #include <iostream>
