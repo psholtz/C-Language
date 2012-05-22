@@ -114,7 +114,7 @@ int main() {
     loop();
     
     // search for perfect numbers
-    //search(9999);
+    //search(10000);
     
     return 0;
 }
