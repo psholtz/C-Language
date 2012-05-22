@@ -1,7 +1,7 @@
 /*
  * File: Round.cpp
  * ---------------------
- * Performs meter-to-English conversion.
+ * Code for rounding numbers.
  */
 
 #include <iostream>

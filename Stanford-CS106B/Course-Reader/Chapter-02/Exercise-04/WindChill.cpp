@@ -1,7 +1,7 @@
 /*
  * File: Round.cpp
  * ---------------------
- * Performs meter-to-English conversion.
+ * Code for calculating wind chill.
  */
 
 #include <iostream>
