@@ -5,6 +5,8 @@ Greek mathematicians took a special interest in numbers that are equal to the su
 
 Write a predicate function **isPerfect** that takes an integer *n* and retursn *true* if *n* is perfect, and *false* otherwise. Test your implementation by writing a main program that uses the **isPerfect** function to check for perfect numbers in the range 1 to 9999 by testing each number in turn. When a perfect number is found, your program should display it on the screen. The first two lines of output should be 6 and 28. Your program should find two other perfect numbers in the range as well.
 
+---
+
 Note: The other two perfect numbers (below 10,000) are 496 and 8128.
 
 Note: This program requires linking with the Stanford C++ Libraries:
