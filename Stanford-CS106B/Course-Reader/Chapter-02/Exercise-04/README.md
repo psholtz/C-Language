@@ -16,6 +16,8 @@ Write a function **windChill** that takes the values of *t* and *v* and returns 
 
 Although it will be easier to do so once you learn how to format numeric data in Chapter 4, you already know enough to generate a table that presents the wind-chill data in columns as shown in Figure 2-15. If you're up for more of a challenge, write a main program that uses **windChill** to produce that table.
 
+---
+
 Note: This program requires linking with the Stanford C++ Libraries:
 
 http://www.stanford.edu/class/cs106b/materials/cppdoc/

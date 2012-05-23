@@ -5,6 +5,8 @@ When a floating-point number is converted to an integer in C++, the value is tru
 
 Write a function **roundToNearestInt(x)** that rounds the floating-point number **x** to the nearest integer. Show that your function works by writing a suitable main program to test it.
 
+---
+
 Note: This program requires linking with the Stanford C++ Libraries:
 
 http://www.stanford.edu/class/cs106b/materials/cppdoc/
