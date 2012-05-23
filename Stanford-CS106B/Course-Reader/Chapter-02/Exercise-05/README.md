@@ -7,6 +7,6 @@ Write a predicate function **isPerfect** that takes an integer *n* and retursn *
 
 Note: The other two perfect numbers (below 10,000) are 496 and 8128.
 
-<u>Note: This program requires linking with the Stanford C++ Libraries:</u>
+Note: This program requires linking with the Stanford C++ Libraries:
 
 http://www.stanford.edu/class/cs106b/materials/cppdoc/
