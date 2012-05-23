@@ -101,7 +101,7 @@ bool isPerfect(int number)
  * ----------------- 
  * Driver loop that obtains numbers from
  * user, and determines if they are perfect.
- * If perfect, it lists the "perfect" factors.
+ * If perfect, it lists the proper divisors.
  */
 void loop()
 {
