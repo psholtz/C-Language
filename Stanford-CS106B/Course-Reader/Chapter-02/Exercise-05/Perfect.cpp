@@ -50,6 +50,12 @@ vector<int> factors(int n)
     return factors;
 }
 
+/*
+ * Function: display(vector<int> elements);
+ * ----------------------------------------
+ * Display a list of elements, separating 
+ * them by commas.
+ */
 void display(vector<int> elements)
 {
     int count = 0;
@@ -64,6 +70,11 @@ void display(vector<int> elements)
     cout << endl;
 }
 
+/*
+ * Function: sum(vector<int> elements);
+ * ------------------------------------
+ * Return the sum of a collection of integers.
+ */
 int sum(vector<int> elements)
 {
     int count = 0;
@@ -75,11 +86,23 @@ int sum(vector<int> elements)
     return count;
 }
 
+/*
+ * Function: isPerfect(int number);
+ * -------------------------------- 
+ * Return true if the number is perfect, otherwise false.
+ */
 bool isPerfect(int number)
 {
     return number == sum(factors(number)); 
 }
 
+/*
+ * Function: loop();
+ * ----------------- 
+ * Driver loop that obtains numbers from
+ * user, and determines if they are perfect.
+ * If perfect, it lists the "perfect" factors.
+ */
 void loop()
 {
     while ( true ) 
@@ -98,6 +121,12 @@ void loop()
     }
 }
 
+/*
+ * Function: search(int n);
+ * ------------------------
+ * Search all positive integers, less than 
+ * n, to determine which of them are perfect.
+ */
 void search(int n)
 {
     for ( int i=1; i < n; ++i ) 
