@@ -3,7 +3,7 @@
  * ---------------------
  * Determines whether integers are prime.
  * Uses a (fast) stochastic algorithm based 
- * on the Miller-Rabin theorem, and Fermat's 
+ * on the Miller-Rabin test, and Fermat's 
  * Little theorem, as described in SICP.
  */
 
