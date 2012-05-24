@@ -27,6 +27,13 @@ void display(vector<int>);
 
 #pragma mark -
 #pragma mark Function Definitions
+/*
+ * Function: isPrime(int n);
+ * -------------------------
+ * Predicate which returns true if n is prime.
+ * Uses "naive" implementation where we search 
+ * for factors up to sqrt(n).
+ */
 bool isPrime(int n)
 {
     if ( n == 1 ) return false;
@@ -38,6 +45,12 @@ bool isPrime(int n)
     return true; 
 }
 
+/*
+ * Function: loop();
+ * -----------------
+ * Driver loop that prompts user to enter
+ * integers to test for primality.
+ */
 void loop()
 {
     while ( true ) 
@@ -55,6 +68,11 @@ void loop()
     }
 }
 
+/*
+ * Function: search(int n);
+ * ------------------------ 
+ * Search for all primes between 1 and n, inclusive.
+ */
 void search(int n)
 {
     vector<int> integers; 
@@ -65,6 +83,11 @@ void search(int n)
     display(integers);
 }
 
+/*
+ * Function: display(vector<int>);
+ * -------------------------------
+ * Dump a collection of integers to cout.
+ */
 void display(vector<int> container)
 {
     int count = 0;
