@@ -2,6 +2,8 @@
  * File: Prime.cpp
  * ---------------------
  * Determines whether integers are prime.
+ * Uses a naive algorithm which tests for 
+ * primality between 2 and sqrt(n).
  */
 
 #include <iostream>
