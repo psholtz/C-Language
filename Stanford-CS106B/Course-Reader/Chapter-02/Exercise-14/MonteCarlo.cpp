@@ -5,7 +5,6 @@
  */
 
 #include <iostream>
-#include <math.h>
 
 // Stanford C++ Libraries
 #include "console.h"
@@ -33,7 +32,7 @@ bool simulation()
     double x = randomReal(-1.0f, +1.0f);
     double y = randomReal(-1.0f, +1.0f);
     
-    return sqrt(x*x + y*y) < 1.0;
+    return x*x + y*y < 1.0;
 }
 
 /*
@@ -61,7 +60,7 @@ int main() {
     while ( true ) {
         cout << "My approximation for PI is: " << pi() << endl; 
         response = getLine("Perform another simulation? ");
-        if ( response == "n" || response == "N" || response == "NO" || response == "no" ) break;
+        if ( !(response == "y" || response == "Y" || response == "yes" || response == "YES") ) break;
         cout << endl;
     }
     
