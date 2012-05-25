@@ -5,7 +5,8 @@ Exercise 15
 Heads..
 Heads..
 Heads..
-A weaker man might be moved to re-examine his faith, if in nothing else at least in the law of probability.
+A weaker man might be moved to re-examine his faith, if in 
+nothing else at least in the law of probability.
 -- Tom Stoppard, Rosencrantz and Guildenstern are Dead, 1967.
 </pre>
 
