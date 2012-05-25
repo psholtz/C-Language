@@ -5,6 +5,8 @@ Although Euclid's algorithm for calculating the greatest common divisor is one o
 
 In 1800, the German mathematician Carl Friedrich Gauss published an algorithm for determining the date of Easter that was purely computational in the sense that it relied on arithmetic rather than looking up values in tables. His algorithm appears at the link below:
 
+http://www.henk-reints.nl/easter/index.htm?frame=easteralg2.htm
+
 Write a procedure:
 
 <pre>
