@@ -1,8 +1,7 @@
 /*
- * File: SquareRoot.cpp
+ * File: Easter.cpp
  * ---------------------
- * Uses an iterative technique to calculate square 
- * roots, based on Problem 1.7 in SICP.
+ * Algorithms for calculating the date of Easter.
  */
 
 #include <iostream>
