@@ -1,7 +1,7 @@
 Exercise 12
 ----------- 
 
-[]
+Write a program **RandomAverage** that repeatedly generates a random real number between 0 and 1 and then displays the average after a specified number of trials entered by the user.
 
 ---
 
