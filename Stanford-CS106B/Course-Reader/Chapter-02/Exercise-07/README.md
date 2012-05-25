@@ -1,7 +1,7 @@
 Exercise 7
 ---------- 
 
-Even though clients of the <cmath> library typically don't need to understand how functions like **sqrt** work internally, the implementors of that library have to be able to design an effective algorithm and write the necessary code. If you were asked to implement the **sqrt** function without using the library version, there are many strategies you could adopt. One of the easiest strategies to understand is *successive approximation* in which you make a guess at the solution and then refine that guess by choosing new values that move closer to the solution.
+Even though clients of the &lt;cmath&gt; library typically don't need to understand how functions like **sqrt** work internally, the implementors of that library have to be able to design an effective algorithm and write the necessary code. If you were asked to implement the **sqrt** function without using the library version, there are many strategies you could adopt. One of the easiest strategies to understand is *successive approximation* in which you make a guess at the solution and then refine that guess by choosing new values that move closer to the solution.
 
 You can use successive approximation to determine the square root of *x* by adopting the following strategy:
 
