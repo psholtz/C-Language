@@ -6,7 +6,7 @@ Random numbers offer yet another strategy for approximating the value of PI. Ima
 What happens if you throw a whole bunch of darts completely randomly, ignoring any darts that miss the board altogether? Some of the darts will fall inside the gray circle, but some will be outside in the white corners of the square. If the darts are random, the ratio of the number of darts landing inside the circle to the total number of darts hitting the square should be approximately equal to the ratio between the two areas. The ratio of the areas is independent of the actual size of the dartboard, as illustrated by the following formula:
 
 <pre>
-
+(darts circle) / (darts square) = (area circle) / (area square) = (pi r^2) / (4 r^2) = pi / 4
 </pre>
 
 To simulate this process in a program, imagine that the dart board is drawn on the standard Cartesian coordinate plane with its center at the origin and a radius of 1 unit. The process of throwing a dart randomly at the square can be modeled by generating two random numbers, *x* and *y*, each of which lies between -1 and +1. This *(x,y)* point always lies somewhere inside the square. The point *(x,y)* lies inside the circle if
