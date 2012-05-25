@@ -12,13 +12,13 @@ What happens if you throw a whole bunch of darts completely randomly, ignoring a
 To simulate this process in a program, imagine that the dart board is drawn on the standard Cartesian coordinate plane with its center at the origin and a radius of 1 unit. The process of throwing a dart randomly at the square can be modeled by generating two random numbers, *x* and *y*, each of which lies between -1 and +1. This *(x,y)* point always lies somewhere inside the square. The point *(x,y)* lies inside the circle if
 
 <pre>
-sqrt(x^2 + y^2) < 1
+sqrt(x*x + y*y) &lt; 1
 </pre>
 
 This condition, however, can simplified considerably by squaring each side of the inequality, which gives the following more efficient test:
 
 <pre>
-x^2 + y^2 < 1
+x*x + y*y &lt; 1
 </pre>
 
 If you perform this simulation many times and compute the fraction of darts that fall within the circle, the result will be an approximate of PI/4.
