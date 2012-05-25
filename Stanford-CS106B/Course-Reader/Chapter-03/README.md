@@ -1,5 +1,5 @@
-Chapter 3
-========= 
+Chapter 3 - Strings
+===================
 
 * 3.1 Using strings as abstract values
 * 3.2 String operations
