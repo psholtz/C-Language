@@ -3,6 +3,8 @@ Exercise 14
 
 Random numbers offer yet another strategy for approximating the value of PI. Imagine that you have a dartboard hanging on your wall that consists of a circle painted on a square backdrop, as in the following diagram:
 
+[![](http://farm8.staticflickr.com/7084/7269085348_a79c236325.jpg)](http://farm8.staticflickr.com/7084/7269085348_a79c236325.jpg)
+
 What happens if you throw a whole bunch of darts completely randomly, ignoring any darts that miss the board altogether? Some of the darts will fall inside the gray circle, but some will be outside in the white corners of the square. If the darts are random, the ratio of the number of darts landing inside the circle to the total number of darts hitting the square should be approximately equal to the ratio between the two areas. The ratio of the areas is independent of the actual size of the dartboard, as illustrated by the following formula:
 
 <pre>
