@@ -4,7 +4,7 @@ Exercise 11
 The concept of a palindrome is often extended to full sentences by ignoring punctuation and differences in the case of letters. For example, the sentence 
 
 <pre>
-Mada, I'm Adam.
+Madam, I'm Adam.
 </pre>
 
 is a sentence palindrome, because if you look only at the letters and ignore any distinction between uppercase and lowercase letters, it reads identically backward and forward.
