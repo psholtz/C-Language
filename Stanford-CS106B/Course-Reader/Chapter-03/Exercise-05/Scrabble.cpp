@@ -12,6 +12,8 @@
 #include "console.h"
 #include "simpio.h"
 
+#define SENTINEL ""
+
 using namespace std;
 
 static map<char,int> SCORES;
@@ -82,9 +84,14 @@ int main() {
     // initialize the scores
     initialize();
     
-    cout << score("FARM") << endl;  // 9
-    cout << score("test") << endl;  // 0
-    cout << score("DOG") << endl;   // 5
+    // enter the loop
+    string word;
+    while ( true ) 
+    {
+        word = getLine("Enter a word: ");
+        if ( word == SENTINEL ) break;
+        cout << score(word) << endl; 
+    }
     
     return 0;
 }
