@@ -53,16 +53,16 @@ std::string Custom::capitalize(std::string str)
 #pragma mark Main Driver Loop
 int main() {
     
-    std::cout << Custom::capitalize("TEST") << std::endl;
-    std::cout << Custom::capitalize("Test") << std::endl;
-    std::cout << Custom::capitalize("test") << std::endl;
-    std::cout << Custom::capitalize("tEsT") << std::endl;
-    std::cout << Custom::capitalize("TeSt") << std::endl;
+  std::cout << Custom::capitalize("TEST") << std::endl;  // "Test"
+  std::cout << Custom::capitalize("Test") << std::endl;  // "Test"
+  std::cout << Custom::capitalize("test") << std::endl;  // "Test"
+  std::cout << Custom::capitalize("tEsT") << std::endl;  // "Test"
+  std::cout << Custom::capitalize("TeSt") << std::endl;  // "Test"
     
     std::cout << std::endl;
     
-    std::cout << Custom::capitalize("BOOLEAN") << std::endl;
-    std::cout << Custom::capitalize("boolean") << std::endl;
+    std::cout << Custom::capitalize("BOOLEAN") << std::endl;  // "Boolean"
+    std::cout << Custom::capitalize("boolean") << std::endl;  // "Boolean"
     
     return 0;
 }
