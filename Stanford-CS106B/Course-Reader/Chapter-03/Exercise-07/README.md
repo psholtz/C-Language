@@ -10,7 +10,7 @@ string removeCharacters(string str, string remove);
 that returns a new string consisting of the characters in **str** after removing all instances of the characters in **remove**. For example, if you call
 
 <pre>
-
+removeCharacters("counterrevolutionaries","aeiou");
 </pre>
 
 the function should return "**cntrrvltnrs**", which is the original string after removing all of its vowels.
