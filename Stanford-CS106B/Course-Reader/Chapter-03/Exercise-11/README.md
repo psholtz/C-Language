@@ -12,9 +12,14 @@ is a sentence palindrome, because if you look only at the letters and ignore any
 Write a predicate function **isSentencePalindrome(str)** that returns **true** if the string **str** fits this definition of a sentence palindrome. For example, you should be able to use your function to write a main program capable of producing the following sample run:
 
 <pre>
-"Madam, I'm Adam." --> yes
-"A man, a plan, a canal -- Panama!!" --> yes
-"Not a palindrome" --> no
+Enter a sentence: "Madam, I'm Adam." 
+That sentence is a palindrome.
+
+Enter a sentence: "A man, a plan, a canal -- Panama!!" 
+That sentence is a palindrome.
+
+Enter a sentence: "Not a palindrome" 
+That sentence is NOT a palindrome.
 </pre>
 
 ---
