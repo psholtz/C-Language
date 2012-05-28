@@ -24,6 +24,11 @@ string replaceAll(string str, string s1, string s2);
 
 #pragma mark -
 #pragma mark Definitions
+/*
+ * Function: replaceAll(string str, char c1, char c2);
+ * --------------------------------------------------- 
+ * Perform single character replacements.
+ */
 string replaceAll(string str, char c1, char c2) 
 {
     string work = str;
@@ -34,6 +39,11 @@ string replaceAll(string str, char c1, char c2)
     return work;
 }
 
+/*
+ * Function: replaceAll(string str, string s1, string s);
+ * -------------------------------------------------------
+ * Perform replacements of entire strings.
+ */
 string replaceAll(string str, string s1, string s2)
 {
     // perform error handling
