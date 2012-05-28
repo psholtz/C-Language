@@ -35,7 +35,8 @@ bool isSentencePalindrome(string str)
             buffer << char(t);
         }
     }
-    
+
+    // now test for palindrome    
     string test = buffer.str(); bool palindrome = true; 
     for ( int i=0; i < test.length()/2; ++i ) 
     {
