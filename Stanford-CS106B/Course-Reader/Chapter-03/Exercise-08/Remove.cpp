@@ -6,7 +6,6 @@
 
 #include <iostream>
 #include <string>
-#include <sstream>
 
 // Stanford C++ Libraries
 #include "console.h"
