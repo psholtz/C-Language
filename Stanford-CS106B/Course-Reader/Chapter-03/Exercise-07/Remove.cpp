@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <string>
+#include <sstream>
 
 // Stanford C++ Libraries
 #include "console.h"
@@ -18,47 +19,38 @@ using namespace std;
 
 #pragma mark -
 #pragma mark Declarations
-void remove_characters(string &target, string remove);
-bool contains(string str, char c);
+string remove_characters(string target, string remove);
 
 #pragma mark -
 #pragma mark Definitions
 /*
  * Function: remove_characters(string &target, string remove);
  * ----------------------------------------------------------- 
- * Remove all the characters in "remove" from "target", and 
- * perform the removal in-place.
+ * Remove all the characters in "remove" from "target".
+ * Return a new string.
  */
-void remove_characters(string &target, string remove)
+string remove_characters(string target, string remove)
 {
-    int endpoint = target.length();
+    bool found = false;
+    stringstream buffer;
+    
     for ( int i=0; i < target.length(); ++i )
     {
-        while ( contains(remove, target[i]) && endpoint > i )
-        {
-            for ( int j=i+1; j < target.length(); ++j ) 
+        found = false;
+        for ( int j=0; j < remove.length(); ++j ) {
+            if ( target[i] == remove[j] ) 
             {
-                target[j-1] = target[j];
+                found = true;
             }
-            endpoint--;
+        }
+        if ( !found ) {
+            buffer << target[i];
         }
     }
-    target.erase(endpoint);
+    return buffer.str(); 
 }
 
-/*
- * Function: bool contains(string str, char c);
- * -------------------------------------------- 
- * Return true if char 'c' is in the string 'str'.
- */
-bool contains(string str, char c)
-{
-    for ( int i=0; i < str.length(); ++i ) 
-    {
-        if ( str[i] == c ) return true;
-    }
-    return false;
-}
+
 
 #pragma mark -
 #pragma mark Main Driver Loop
@@ -78,7 +70,7 @@ int main() {
         // output the answer
         word = trim(word);
         remove = trim(remove);
-        remove_characters(word, remove);
+        word = remove_characters(word, remove);
         cout << "Removed characters: " << word << endl;
         cout << endl;
     }
