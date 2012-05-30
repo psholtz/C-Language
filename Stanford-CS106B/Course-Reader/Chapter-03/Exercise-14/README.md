@@ -16,7 +16,21 @@ string addCommas(string digits);
 that takes a string of decimal digits representing a number and returns the string formed by inserting commas at every third position, starting on the right. For example, if you were to execute the main program
 
 <pre>
-s
+int main()
+{
+  while ( true ) {
+    string digits = getLine("Enter a number: ");
+    if ( digits == "" ) break;
+    cout << addCommas(digits) << endl;
+  }
+  return 0;
+}
+</pre>
+
+your implementation of the **addCommas** function should be able to produce the following sample run:
+
+<pre>
+ss
 </pre>
 
 ---
