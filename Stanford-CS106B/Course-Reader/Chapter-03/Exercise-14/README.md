@@ -21,7 +21,7 @@ int main()
   while ( true ) {
     string digits = getLine("Enter a number: ");
     if ( digits == "" ) break;
-    cout << addCommas(digits) << endl;
+    cout &lt;&lt; addCommas(digits) &lt;&lt; endl;
   }
   return 0;
 }
