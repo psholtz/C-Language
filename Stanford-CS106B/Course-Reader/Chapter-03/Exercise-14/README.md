@@ -30,7 +30,14 @@ int main()
 your implementation of the **addCommas** function should be able to produce the following sample run:
 
 <pre>
-ss
+Enter a number: 17
+17
+Enter a number: 1001
+1,001
+Enter a number: 12345678
+12,345,678
+Enter a number: 999999999
+999,999,999
 </pre>
 
 ---
