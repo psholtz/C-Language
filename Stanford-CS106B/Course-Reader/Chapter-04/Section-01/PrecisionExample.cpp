@@ -28,18 +28,18 @@ void printPrecisionTable();
 #pragma mark Definitions
 void printPrecisionTable()
 {
-    cout << "------+--------------+------------------+----------------+" << endl;
-    cout << " prec |      pi      |  speed of light  | fine-structure |" << endl;
-    cout << "------+--------------+------------------+----------------+" << endl;
+    cout << "+------+--------------+------------------+----------------+" << endl;
+    cout << "| prec |      pi      |  speed of light  | fine-structure |" << endl;
+    cout << "+------+--------------+------------------+----------------+" << endl;
     for ( int prec = 0; prec <= 6; prec += 2 )
     {
-        cout << setw(4) << prec << "  |";
+        cout << "|" << setw(4) << prec << "  |";
         cout << " " << setw(12) << setprecision(prec) << PI << " |";
         cout << " " << setw(16) << setprecision(prec) << SPEED_OF_LIGHT << " |";
         cout << " " << setw(14) << setprecision(prec) << FINE_STRUCTURE << " |";
         cout << endl;
     }
-    cout << "------+--------------+------------------+----------------+" << endl;    
+    cout << "+------+--------------+------------------+----------------+" << endl;    
 }
 
 #pragma mark -
