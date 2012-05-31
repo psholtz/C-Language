@@ -1,5 +1,5 @@
 /*
- * File: Caesar.cpp
+ * File: Letter.cpp
  * --------------------------
  * Implement a letter substitution cipher.
  * 
