@@ -1,7 +1,7 @@
 /*
- * File: Plural.cpp
- * --------------------------
- * Program for creating word plurals.  
+ * File: Obenglobish.cpp
+ * ---------------------
+ * Code for performing Obenglobish translations.
  */
 
 #include <iostream>

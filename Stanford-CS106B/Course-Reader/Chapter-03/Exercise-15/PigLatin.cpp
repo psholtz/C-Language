@@ -1,7 +1,7 @@
 /*
- * File: Commas.cpp
+ * File: PigLatin.cpp
  * --------------------
- * Add commas to a number.
+ * More sophisticated encoding of Pig Latin text.
  */
 
 #include <iostream>
