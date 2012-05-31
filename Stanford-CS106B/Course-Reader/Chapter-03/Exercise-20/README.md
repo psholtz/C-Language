@@ -47,7 +47,7 @@ Write a function
 int findDNAMatch(string s1, string s2, int start=0);
 </pre>
 
-that.
+that returns the first position at which the DNA strand **s1** can attach to the strand **s2**. As in the **find** method for the **string** class, the optional **start** parameter indicates the index position at which the search should start. If there is no match, **findDNAMatch** should return -1.
 
 ---
 
