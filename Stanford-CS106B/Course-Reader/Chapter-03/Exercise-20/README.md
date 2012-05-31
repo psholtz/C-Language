@@ -1,6 +1,8 @@
 Exercise 20
 ----------- 
 
+[![](http://farm9.staticflickr.com/8143/7309439282_cec2db13ee.jpg)](http://farm9.staticflickr.com/8143/7309439282_cec2db13ee.jpg)
+
 *There is no gene for the human spirit.*
 - Tagline for the 1997 film GATTACA
 
