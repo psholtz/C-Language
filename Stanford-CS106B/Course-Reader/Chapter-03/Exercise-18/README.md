@@ -7,9 +7,7 @@ They key in a letter-substitution cipher is a 26-character string that indicates
 
 <pre>
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
-
 |||||||||||||||||||||||||| 
-
 QWERTYUIOPASDFGHJKLZXCVBNM
 </pre>
 
