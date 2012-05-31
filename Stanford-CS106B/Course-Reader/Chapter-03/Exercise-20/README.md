@@ -19,7 +19,35 @@ T A A C G G T A C G T  C
 0 1 2 3 4 5 6 7 8 9 10 11
 </pre>
 
+Your mission in this exercise is to determine where a shorter DNA strand can attach itself to the longer one. If, for example, you were trying to find a match for the strand
 
+<pre>
+T T G C C
+</pre>
+
+the rules of DNA dictate that this strand can bind to the longer one only at position 1:
+
+<pre>
+  T T G C C 
+----------------------- 
+T A A C G G T A C G T C
+</pre>
+
+By contrast, the strand
+
+<pre>
+T G C
+</pre>
+
+matches at either position 2 or position 7.
+
+Write a function
+
+<pre>
+int findDNAMatch(string s1, string s2, int start=0);
+</pre>
+
+that returns the first position at which the DNA strand **s1** can attach to the strand **s2**.
 ---
 
 Note: This program requires linking with the Stanford C++ Libraries:
