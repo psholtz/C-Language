@@ -47,7 +47,8 @@ Write a function
 int findDNAMatch(string s1, string s2, int start=0);
 </pre>
 
-that returns the first position at which the DNA strand **s1** can attach to the strand **s2**.
+that.
+
 ---
 
 Note: This program requires linking with the Stanford C++ Libraries:
