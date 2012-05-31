@@ -18,7 +18,7 @@ int main()
     string word = getLine("Enter a word: ");
     if ( word == "" ) break;
     string trans = obenglobish(word);
-    cout << word << " -> " << trans << endl;
+    cout &lt;&lt; word &lt;&lt; " -&gt; " &lt;&lt; trans &lt;&lt; endl;
   }
 }
 </pre>
