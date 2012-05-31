@@ -1,5 +1,5 @@
 /*
- * File: Caesar.cpp
+ * File: Letter.cpp
  * --------------------------
  * Implement a letter substitution cipher.
  * 
@@ -44,6 +44,7 @@ string generateCipherText(const string& plaintext, const string& key)
     
     if ( upperKey.length() != 26 || lowerKey.length() != 26 ) return "";
 
+    // generate the ciphertext.
     char ch; size_t index;
     stringstream buffer; 
     for ( int i=0; i < plaintext.length(); ++i ) 
