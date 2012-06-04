@@ -29,3 +29,9 @@ Char count: 1793405
 Word count:  316134
 Line count:   33203
 </pre>
+
+---
+
+Note: This program requires linking with the Stanford C++ Libraries:
+
+http://www.stanford.edu/class/cs106b/materials/cppdoc/
