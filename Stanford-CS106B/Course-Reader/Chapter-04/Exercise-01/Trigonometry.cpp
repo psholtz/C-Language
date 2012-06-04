@@ -9,10 +9,6 @@
 #include <iomanip>
 #include <cmath>
 
-// Stanford C++ Libraries
-#include "console.h"
-#include "simpio.h"
-
 #define PI 3.14159265358979323846
 
 using namespace std;

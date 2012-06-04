@@ -24,9 +24,3 @@ The &lt;iomanip&gt; library gives programmers more control over output format, w
 </pre>
 
 The numeric columns should all be aligned on the right, and the columns containing the trigonometric functions (which are listed here for angles in degrees at 15-degree intervals) should all have seven digits after the decimal point.
-
----
-
-Note: This program requires linking with the Stanford C++ Libraries:
-
-http://www.stanford.edu/class/cs106b/materials/cppdoc/
