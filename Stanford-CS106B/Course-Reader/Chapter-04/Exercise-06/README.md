@@ -19,4 +19,10 @@ would return "Shakespeare.txt". If **filename** already has an extension, that n
 defaultExtension("library.h",".cpp");
 </pre>
 
-would ignore the specified extension and return "library.h" unchanged.
+would ignore the specified extension and return "library.h" unchanged. If, however, **ext** includes a star before the dot, **defaultExtension** removes any existing extension from **filename** and adds the new one (minus the star). Thus,
+
+<pre>
+defaultExtension("library.h", "*.cpp");
+</pre>
+
+would return "library.cpp". Write the code for **defaultExtension** so that it behaves as described in this exercise.
