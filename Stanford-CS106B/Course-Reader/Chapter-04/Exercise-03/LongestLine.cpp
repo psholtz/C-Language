@@ -1,7 +1,7 @@
 /*
- * File: WindChill.cpp
- * ---------------------- 
- * Display a wind chill table like that provided by the National Weather Service.
+ * File: LongestLine.cpp
+ * --------------------- 
+ * Find the longest line in a file entered by the user.
  */
 
 #include <iostream>
