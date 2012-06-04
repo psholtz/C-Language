@@ -62,7 +62,7 @@ std::string getExtension(std::string filename)
         return filename.substr(index);
     }
     
-    return filename;
+    return "";
 }
 
 #pragma mark -
