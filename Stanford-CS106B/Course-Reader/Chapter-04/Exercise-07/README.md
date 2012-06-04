@@ -6,13 +6,17 @@ On occasion, publishers find it useufl to evaluate layouts and stylistic designs
 Write a program that reads characters from an input file and displays them on the console after making the appropriate random substitutions. Your program should replace every uppercase character in the input by a radom uppercase character and every lowercase character by a random lowercase one. Nonalphabetic characters should remain unchanged. For example, if the input file "Trolius.txt" contains the text from *Trolius and Cressida*, 
 
 <pre>
-
+Ay, Greek; and that shall be divulged well
+In characters as red as Mars his heart
+Inflamed with Venus:
 </pre>
 
 your program should generate output that looks something like this:
 
 <pre>
-
+Ud, Izpvr; szk eroj jymnc kt pagkftlt zxba
+Lm havuvndtll eg dgz rt Otly bwk myvvj
+Fogyzswt vrva Ciqgc:
 </pre>
 
 --- 
