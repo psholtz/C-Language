@@ -1,7 +1,7 @@
 /*
- * File: Publisher.cpp
- * ---------------------- 
- * "Randomize" words as per publisher requirements.
+ * File: Banish.cpp
+ * ---------------- 
+ * "Banish" offending or censored words from a text.
  */
 
 #include <iostream>
