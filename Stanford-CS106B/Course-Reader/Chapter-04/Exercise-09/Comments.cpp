@@ -19,8 +19,8 @@ using namespace std;
 
 #pragma mark -
 #pragma mark Function Prototypes
-void copyStreams(string inputFilename, string outputFilename);
-void removeComments(istream &is, ostream &os);
+void copyStreams(string inputFilename, string outputFilename);      // random comment (for testing)
+void removeComments(istream &is, ostream &os);                      // random comment (for testing)
 
 #pragma mark -
 #pragma mark Function Definitions
@@ -52,48 +52,36 @@ void copyStreams(string inputFilename, string outputFilename)
  */
 void removeComments(istream &is, ostream &os)
 {
-    string line;
+    string line, tmp;
     stringstream buffer;
-    bool insideComment1 = false; 
+    bool c1 = false, c2 = false, w1 = true;
     while ( !is.eof() )
     {
-        insideComment1 = false;
+        c2 = false; w1 = true;
         getline(is,line);
-        for ( int i=0; i < line.length()-1; ++i ) 
+        for ( int i=0; i < line.length(); ++i )
         {
-            if ( line[i] == '/' && line[i+1] == '/' )
+            if ( i < line.length()-1 )
             {
-                insideComment1 = true;
+                if ( line[i] == '/' && line[i+1] == '/' ) c2 = true;
             }
-            if ( !insideComment1 )
-            {
-                buffer << line[i];
-            }
+            if ( !c2 ) buffer << (char)line[i]; 
         }
-        
-        os.write(buffer.str().c_str(), buffer.str().length());
-
-        // reset the buffer
+        if ( c2 ) 
+        {
+            bool foundChar = false; 
+            tmp = buffer.str();
+            for ( int i=0; i < tmp.length(); ++i ) 
+            {
+                if ( !isspace(tmp[i]) ) foundChar = true;
+            }
+            w1 = foundChar;
+        }
+            
+        if ( w1 ) {
+            cout << buffer.str() << endl;
+        }
         buffer.str(std::string());
-        
-//        // test for whether we are done
-//        int ch = is.get();
-//        if ( ch == EOF ) break;
-//        
-//        // test for the C++ style comments
-//        if ( foundSlash && ch == '/' )
-//        {
-//            insideComment1 = true; 
-//        }
-//        if ( foundSlash && ch == '\n' ) 
-//        {
-//            insideComment1 = false;
-//        }
-//        foundSlash = ch == '/' ? true : false;
-//        
-//        // write if we are not in a comment
-//        if ( !insideComment1 ) 
-//            os.put(ch);
     }
 }
 
@@ -111,6 +99,7 @@ int main() {
         outputFilename = getLine("Enter output file: ");
         if ( outputFilename == SENTINEL ) break;
         
+        // copy the streams
         copyStreams(inputFilename, outputFilename);
         cout << endl;
     }
