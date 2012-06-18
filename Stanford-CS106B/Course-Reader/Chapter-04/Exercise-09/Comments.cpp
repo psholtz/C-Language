@@ -33,56 +33,75 @@ void removeComments(istream &is, ostream &os);                      // random co
  */
 void copyStreams(string inputFilename, string outputFilename)
 {
-    ifstream infile(inputFilename.c_str());
+    // Open the input stream 
+    ifstream infile(inputFilename.c_str());     /* This is one type of comment */
     if ( infile.fail() ) 
     {
         cout << "Could not open file: " + inputFilename << endl;
         return;
     }
     
+    // Open the output stream
     ofstream outfile(outputFilename.c_str());
+    
+    // Remove the comments, stream-to-stream
     removeComments(infile, outfile);
+    
+    // Close the streams
+    infile.close();
+    outfile.close();
 }
 
 /*
  * Function: removeComments(istream &is, ostream &os);
  * --------------------------------------------------- 
- * Copy one stream to another, removing the comments
- * in the process.
+ * Copy one stream to another, removing the comments in the process.
+ * 
+ * Define Comment1 to be the C-style comments.
+ * Define Comment2 to be the C++-style comments.
+ * 
+ * There are various cases possible:
+ * 
+ *  (1)
  */
 void removeComments(istream &is, ostream &os)
 {
     string line, tmp;
-    stringstream buffer;
-    bool c1 = false, c2 = false, w1 = true;
+    stringstream buffer, total;
+    bool foundComment1 = false;     // comment 1 are "/*" style comments (<-- good test for parsing)
+    bool foundComment2 = false;     // comment 2 are "//" style comments (<-- good test for parsing)
+    bool emergencyHalt = false; 
+    
     while ( !is.eof() )
     {
-        c2 = false; w1 = true;
+        // Read in another line
         getline(is,line);
+        buffer.str(std::string());
+        
+        // Scan the string
         for ( int i=0; i < line.length(); ++i )
         {
-            if ( i < line.length()-1 )
-            {
-                if ( line[i] == '/' && line[i+1] == '/' ) c2 = true;
-            }
-            if ( !c2 ) buffer << (char)line[i]; 
+            if ( i < line.length()-1 )  { if (line[i] == '/' && line[i+1] == '*') foundComment1 = true; }
+            if ( i == line.length()-1 ) { if (line[i-1] == '*' && line[i] == '/') foundComment1 = false; }
+            if ( !foundComment1 ) buffer << line[i];
         }
-        if ( c2 ) 
-        {
-            bool foundChar = false; 
-            tmp = buffer.str();
-            for ( int i=0; i < tmp.length(); ++i ) 
-            {
-                if ( !isspace(tmp[i]) ) foundChar = true;
-            }
-            w1 = foundChar;
-        }
-            
-        if ( w1 ) {
-            cout << buffer.str() << endl;
-        }
-        buffer.str(std::string());
+        if ( !foundComment1 ) buffer << '\n';
+                
+        // Copy to running buffer
+        total << buffer.str();
     }
+    
+    // Remove final null char if there is one
+    int len = total.str().length();
+    if ( total.str()[len-1] == '\n' ) 
+    {
+        std::string tmp = total.str();
+        total.str(std::string());
+        total << tmp.substr(0,len-1);
+    }
+    
+    // Write to output buffer
+    os << total.str();
 }
 
 #pragma mark -
@@ -101,8 +120,9 @@ int main() {
         
         // copy the streams
         copyStreams(inputFilename, outputFilename);
+        
         cout << endl;
     }
-
+    
     return 0;
 }
